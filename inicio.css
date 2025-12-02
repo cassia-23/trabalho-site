@@ -1,0 +1,158 @@
+*{
+     margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* HEADER */
+.header {
+    background-color: #a88484;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+/* CATEGORIAS */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+    
+
+
+.flex > div {
+    flex: 1 1 200px;
+    margin: 10px;
+      
+
+}
+
+
+/* BOTÕES */
+.BT1, .BT2, .BT3, .BT4, .BT5 {
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #5c4848;
+    color: white;
+    border: none;
+}
+/*  FOOTER */
+footer {
+    background-color: #a88484;
+    color: white;
+    padding: 40px 20px 10px;
+}
+
+.flex-container-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-link {
+    font-size: 24px;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: #b8860b;
+}
+
+.footer-contato ul {
+    list-style: none;
+}
+
+.footer-contato li {
+    margin-bottom: 8px;
+}
+
+.footer-contato h4 {
+    margin-bottom: 10px;
+}
+
+footer img {
+    border-radius: 6px;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+}
+
+/*  RESPONSIVIDADE */
+
+/* Tablets */
+@media (max-width: 900px) {
+    .categorias {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    .categorias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    #footer_social_media {
+        justify-content: center;
+    }
+}
+
+

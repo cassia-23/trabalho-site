@@ -1,0 +1,178 @@
+body, ul, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* CABEÇALHO */
+.header {
+    background-color: #a88484;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+/* SEÇÃO PRODUTOS */
+.imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    padding: 40px 20px;
+}
+
+/* CLASS DE PRODUTO */
+.imagens > div {
+    width: 260px;
+    background-color: #ffffff;
+    padding: 18px;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px #00000020;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+/* ANIMAÇÃO DA CLASS */
+.imagens > div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 15px #00000030;
+}
+
+.imagens h5 {
+    margin: 12px 0;
+    color: #3a2d2d;
+    font-size: 1rem;
+}
+
+/* BOTÕES PADRONIZADOS */
+.btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn8 {
+    background-color: #5c4848;
+    color: white;
+    padding: 12px;
+    margin-top: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+/* HOVER BOTÕES */
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover,
+.btn5:hover, .btn6:hover, .btn7:hover, .btn8:hover {
+    background-color: #453636;
+    transform: scale(1.03);
+}
+
+/* FOOTER */
+footer {
+    background-color: #a88484;
+    color: white;
+    padding: 40px 20px 10px;
+}
+
+.flex-container-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-link {
+    font-size: 24px;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: #b8860b;
+}
+
+.footer-contato ul {
+    list-style: none;
+}
+
+.footer-contato li {
+    margin-bottom: 8px;
+}
+
+.footer-contato h4 {
+    margin-bottom: 10px;
+}
+
+footer img {
+    border-radius: 6px;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+}
+/* RESPONSIVIDADE */
+
+
+/* Celulares */
+@media (max-width: 600px) {
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .flex-container-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+    .card {
+        width: 45%;
+    }
+}
